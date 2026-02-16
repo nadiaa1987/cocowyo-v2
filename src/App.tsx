@@ -841,7 +841,7 @@ function WhatYouGetSection() {
     { num: '4', title: '500 Pre-Made Image Pack', desc: 'Ready-to-publish assets across 10 popular themes. Start selling on day one without waiting for generation.' },
     { num: '5', title: '20+ Artistic Styles', desc: 'Choose from kawaii, mandala, realistic, cartoon, vintage, and more. Match any niche or audience preference.' },
     { num: '6', title: 'Commercial License Included', desc: 'Sell everything you create. Amazon KDP, Etsy, Shopify, Gumroad — anywhere. You keep 100% of profits.' },
-    { num: '7', title: 'Free Updates for 1 Month', desc: 'Every new feature, style, and improvement we add — you get automatically at no extra cost.' },
+    { num: '7', title: 'Free Updates', desc: 'Every new feature, style, and improvement we add — you get automatically at no extra cost for the duration of your subscription.' },
     { num: '8', title: 'Priority Support', desc: 'Get fast answers when you need help. We\'re real humans who actually respond quickly.' },
   ];
 
@@ -960,7 +960,7 @@ function HiddenCostSection() {
                   <CheckCircle2 className="w-5 h-5 text-green-400" />
                   <span className="text-green-400 font-medium">With Cocowyo Coloring</span>
                 </div>
-                <p className="text-green-400/80 text-sm mt-1">$0 per page. Unlimited for 1 month.</p>
+                <p className="text-green-400/80 text-sm mt-1">$0 per page. Unlimited.</p>
               </div>
             </ScrollReveal>
           </div>
@@ -1133,7 +1133,7 @@ function PricingSection() {
     { name: '2,000 Ready-to-Use Prompts', value: '$97' },
     { name: '500 Pre-Made Image Pack (10 Themes)', value: '$67' },
     { name: 'Commercial License (Sell Anywhere)', value: '$97' },
-    { name: 'Free Updates for 1 Month', value: '$57' },
+    { name: 'Free Updates', value: '$57' },
   ];
 
   return (
@@ -1149,32 +1149,15 @@ function PricingSection() {
               Get <span className="text-green-400">Everything</span> for One Price
             </h2>
             <p className="text-zinc-400">No monthly fees. No per-image credits. No hidden costs.</p>
-            <p className="text-zinc-500 text-sm">Just one payment and you're in for a full month.</p>
+            <p className="text-zinc-500 text-sm">Just one payment and you're in.</p>
           </div>
         </ScrollReveal>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start max-w-4xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 items-start max-w-5xl mx-auto">
+          {/* 1 Month Card */}
           <ScrollReveal delay={100}>
-            <div className="p-6 rounded-2xl bg-zinc-900/50 border border-zinc-800">
-              <p className="text-zinc-500 text-xs font-medium uppercase tracking-wider mb-4">Everything Included:</p>
-              <div className="space-y-3">
-                {items.map((item, i) => (
-                  <div key={i} className="flex justify-between items-center py-2 border-b border-zinc-800 last:border-0">
-                    <span className="text-zinc-300 text-sm">{item.name}</span>
-                    <span className="text-zinc-500 text-sm">{item.value}</span>
-                  </div>
-                ))}
-              </div>
-              <div className="mt-4 pt-4 border-t border-zinc-700 flex justify-between items-center">
-                <span className="text-zinc-400 font-medium">Total Value:</span>
-                <span className="text-zinc-300 font-bold text-xl">$355</span>
-              </div>
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal delay={200}>
-            <div className="p-6 rounded-2xl bg-zinc-900/50 border border-cyan-500/30 glow-purple">
-              <div className="inline-block px-3 py-1 rounded-full bg-yellow-500 text-black text-xs font-bold mb-4">
+            <div className="p-6 rounded-2xl bg-zinc-900/50 border border-cyan-500/30 glow-purple h-full flex flex-col">
+              <div className="inline-block px-3 py-1 rounded-full bg-yellow-500 text-black text-xs font-bold mb-4 self-start">
                 SAVE 92% TODAY
               </div>
               <div className="text-center mb-6">
@@ -1191,16 +1174,66 @@ function PricingSection() {
                   <span className="font-bold">Only 47 spots left at this price!</span>
                 </p>
               </div>
-              <a href="https://warriorplus.com/o2/buy/lby14x/gsmjx1/w580gj"><img src="https://warriorplus.com/o2/btn/cn100011001/lby14x/gsmjx1/458141" /></a>
-              <div className="flex items-center justify-center gap-2 mt-4 text-zinc-500 text-xs">
-                <Shield className="w-4 h-4" />
-                Secure Checkout
-                <CheckCircle2 className="w-4 h-4 ml-2" />
-                30-Day Guarantee
+              <div className="mt-auto">
+                <a href="https://warriorplus.com/o2/buy/lby14x/gsmjx1/w580gj"><img src="https://warriorplus.com/o2/btn/cn100011001/lby14x/gsmjx1/458141" /></a>
+                <div className="flex items-center justify-center gap-2 mt-4 text-zinc-500 text-xs">
+                  <Shield className="w-4 h-4" />
+                  Secure Checkout
+                  <CheckCircle2 className="w-4 h-4 ml-2" />
+                  30-Day Guarantee
+                </div>
+              </div>
+            </div>
+          </ScrollReveal>
+
+          {/* 1 Year Card */}
+          <ScrollReveal delay={200}>
+            <div className="p-6 rounded-2xl bg-zinc-900/50 border border-yellow-500/30 glow-gold h-full flex flex-col">
+               <div className="inline-block px-3 py-1 rounded-full bg-yellow-500 text-black text-xs font-bold mb-4 self-start">
+                BEST VALUE
+              </div>
+              <div className="text-center mb-6">
+                <p className="text-zinc-500 text-sm mb-2">1 YEAR ACCESS</p>
+                <div className="flex items-center justify-center gap-3 mb-2">
+                  <span className="text-5xl font-bold text-yellow-400">$299</span>
+                </div>
+                <p className="text-zinc-400 text-sm">One payment • Full access for 12 months</p>
+              </div>
+               <div className="p-3 rounded-xl bg-green-500/10 border border-green-500/30 mb-6">
+                <p className="text-green-400 text-xs text-center">
+                  <span className="font-bold">Includes everything from the monthly plan & more!</span>
+                </p>
+              </div>
+              <div className="mt-auto">
+                <a href="https://warriorplus.com/o2/buy/lby14x/gsmjx1/pp7045"><img src="https://warriorplus.com/o2/btn/cn100011001/lby14x/gsmjx1/458145" /></a>
+                <div className="flex items-center justify-center gap-2 mt-4 text-zinc-500 text-xs">
+                  <Shield className="w-4 h-4" />
+                  Secure Checkout
+                  <CheckCircle2 className="w-4 h-4 ml-2" />
+                  30-Day Guarantee
+                </div>
               </div>
             </div>
           </ScrollReveal>
         </div>
+        
+        <ScrollReveal delay={300}>
+            <div className="p-6 mt-12 rounded-2xl bg-zinc-900/50 border border-zinc-800 max-w-4xl mx-auto">
+              <p className="text-zinc-500 text-xs font-medium uppercase tracking-wider mb-4 text-center">Everything Included in Your Subscription:</p>
+              <div className="space-y-3">
+                {items.map((item, i) => (
+                  <div key={i} className="flex justify-between items-center py-2 border-b border-zinc-800 last:border-0">
+                    <span className="text-zinc-300 text-sm">{item.name}</span>
+                    <span className="text-zinc-500 text-sm">{item.value}</span>
+                  </div>
+                ))}
+              </div>
+               <div className="mt-4 pt-4 border-t border-zinc-700 flex justify-between items-center">
+                <span className="text-zinc-400 font-medium">Total Value:</span>
+                <span className="text-zinc-300 font-bold text-xl">$415</span>
+              </div>
+            </div>
+          </ScrollReveal>
       </div>
     </section>
   );
@@ -1248,8 +1281,8 @@ function FAQSection() {
     { q: 'What exactly is Cocowyo Coloring?', a: 'Cocowyo Coloring is an AI-powered platform that generates both black-and-white coloring pages and full-color illustrations from simple text prompts. It\'s designed specifically for creators who want clean, usable outputs without the hassle of traditional design tools or expensive freelancers.' },
     { q: 'Can I sell the pages I create?', a: 'Yes! Every purchase includes a commercial license that allows you to sell your creations on Amazon KDP, Etsy, Shopify, Gumroad, or anywhere else. You keep 100% of the profits.' },
     { q: 'Do I need design skills or experience?', a: 'Not at all. Cocowyo Coloring is built for creators, not designers. The interface is simple and intuitive. Just type what you want, choose your style, and click generate.' },
-    { q: 'Will I get updates in the future?', a: 'Yes, your purchase includes free updates for 1 full month. Every new feature, style, and improvement we add is yours at no extra cost.' },
-    { q: 'Do I need to pay monthly fees?', a: 'No! This is a one-time payment for 1 month of full access. No monthly fees, no per-image credits, no hidden costs.' },
+    { q: 'Will I get updates in the future?', a: 'Yes, your purchase includes free updates for the duration of your subscription. Every new feature, style, and improvement we add is yours at no extra cost.' },
+    { q: 'Do I need to pay monthly fees?', a: 'We offer both monthly and yearly subscription options. This is a one-time payment for the chosen subscription period (1 month or 1 year). There are no other fees.' },
     { q: 'Is there a refund policy?', a: 'Absolutely. We offer a 30-day money-back guarantee. If Cocowyo Coloring isn\'t right for you, just request a refund within 30 days — no questions asked.' },
     { q: 'How fast can I start creating pages?', a: 'Immediately after purchase. Login, write your first prompt, and have your first coloring page or illustration in minutes.' },
     { q: 'How many images can I create per day?', a: 'Unlimited. There are no daily caps, no credit systems, and no restrictions. Create as much as you want.' },
