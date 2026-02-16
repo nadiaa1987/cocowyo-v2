@@ -124,10 +124,12 @@ function Hero() {
 
           <ScrollReveal delay={400}>
             <div className="flex flex-wrap justify-center gap-4 mb-10">
-              <button className="btn-primary flex items-center gap-2">
-                <Star className="w-4 h-4" />
-                One dashboard. Unlimited pages. Built for KDP, Etsy, and printables.
-              </button>
+			  <a href="#pricing">
+				<button className="btn-primary flex items-center gap-2">
+				  <Star className="w-4 h-4" />
+				  One dashboard. Unlimited pages. Built for KDP, Etsy, and printables.
+				</button>
+			  </a>
             </div>
           </ScrollReveal>
 
@@ -1060,7 +1062,9 @@ function WhyDifferentSection() {
         <ScrollReveal delay={400}>
           <div className="text-center mt-12">
             <p className="text-zinc-400 mb-4">If you're ready to stop paying per output, this is the simplest path.</p>
-            <button className="btn-primary">Start Creating Without Limits</button>
+            <a href="#pricing">
+              <button className="btn-primary">Start Creating Without Limits</button>
+            </a>
           </div>
         </ScrollReveal>
       </div>
@@ -1137,7 +1141,7 @@ function PricingSection() {
   ];
 
   return (
-    <section className="section-padding bg-[#0a0a0f]">
+    <section id="pricing" className="section-padding bg-[#0a0a0f]">
       <div className="container-max mx-auto">
         <ScrollReveal>
           <div className="text-center mb-12">
@@ -1383,9 +1387,11 @@ function FinalCTASection() {
           <p className="text-zinc-400 mb-8 max-w-xl mx-auto">
             Join hundreds of creators already using Cocowyo Coloring to build their publishing business.
           </p>
-          <button className="btn-primary text-lg px-10 py-5">
-            Unlock Full Access to Cocowyo Coloring
-          </button>
+          <a href="#pricing">
+            <button className="btn-primary text-lg px-10 py-5">
+              Unlock Full Access to Cocowyo Coloring
+            </button>
+          </a>
           <div className="flex flex-wrap justify-center gap-4 mt-6">
             {[
               { icon: Lock, label: 'Secure checkout' },
