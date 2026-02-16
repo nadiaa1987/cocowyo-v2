@@ -842,7 +842,7 @@ function WhatYouGetSection() {
     { num: '3', title: '2,000 Ready-to-Use Prompts', desc: '1,000 coloring page prompts + 1,000 illustration prompts. Organized by themes like animals, fantasy, nature, and more.' },
     { num: '4', title: '500 Pre-Made Image Pack', desc: 'Ready-to-publish assets across 10 popular themes. Start selling on day one without waiting for generation.' },
     { num: '5', title: '20+ Artistic Styles', desc: 'Choose from kawaii, mandala, realistic, cartoon, vintage, and more. Match any niche or audience preference.' },
-    { num: '6', title: 'Commercial License Included', desc: 'Sell everything you create. Amazon KDP, Etsy, Shopify, Gumroad — anywhere. You keep 100% of profits.' },
+    { num: '6', title: 'Commercial License Included', desc: 'Sell everything you create. Amazon KDP, Etsy, Shopify, Gumroad — anywhere. You keep 100% of the profits.' },
     { num: '7', title: 'Free Updates', desc: 'Every new feature, style, and improvement we add — you get automatically at no extra cost for the duration of your subscription.' },
     { num: '8', title: 'Priority Support', desc: 'Get fast answers when you need help. We\'re real humans who actually respond quickly.' },
   ];
@@ -1422,6 +1422,26 @@ function SalesPageDisclaimer() {
   );
 }
 
+// WarriorPlus Disclaimer
+function WarriorPlusDisclaimer() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://warriorplus.com/o2/disclaimer/m92mcy";
+    script.defer = true;
+    document.body.appendChild(script);
+    
+    return () => {
+      const scriptElement = document.querySelector("script[src='https://warriorplus.com/o2/disclaimer/m92mcy']");
+      if (scriptElement) {
+        document.body.removeChild(scriptElement);
+      }
+    };
+  }, []);
+
+  return <div className="wplus_spdisclaimer"></div>;
+}
+
 // Footer
 function Footer() {
   return (
@@ -1489,6 +1509,7 @@ function App() {
         <FinalCTASection />
       </main>
       <SalesPageDisclaimer />
+      <WarriorPlusDisclaimer />
       <Footer />
     </div>
   );
