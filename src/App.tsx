@@ -1179,7 +1179,7 @@ function PricingSection() {
                 </p>
               </div>
               <div className="mt-auto">
-                <a href="https://warriorplus.com/o2/buy/lby14x/gsmjx1/w580gj"><img src="https://warriorplus.com/o2/btn/cn100011001/lby14x/gsmjx1/458141" /></a>
+                <a href="https://warriorplus.com/o2/buy/m92mcy/fz2k0s/w580gj"><img src="https://warriorplus.com/o2/btn/cn100011001/m92mcy/fz2k0s/458141" /></a>
                 <div className="flex items-center justify-center gap-2 mt-4 text-zinc-500 text-xs">
                   <Shield className="w-4 h-4" />
                   Secure Checkout
@@ -1209,7 +1209,7 @@ function PricingSection() {
                 </p>
               </div>
               <div className="mt-auto">
-                <a href="https://warriorplus.com/o2/buy/lby14x/gsmjx1/pp7045"><img src="https://warriorplus.com/o2/btn/cn100011001/lby14x/gsmjx1/458145" /></a>
+                <a href="https://warriorplus.com/o2/buy/m92mcy/fz2k0s/pp7045"><img src="https://warriorplus.com/o2/btn/cn100011001/m92mcy/fz2k0s/458145" /></a>
                 <div className="flex items-center justify-center gap-2 mt-4 text-zinc-500 text-xs">
                   <Shield className="w-4 h-4" />
                   Secure Checkout
@@ -1337,8 +1337,8 @@ function FAQSection() {
 // Team Section
 function TeamSection() {
   const team = [
-    { name: 'Lylia Phan', role: 'Co-Founder', desc: 'Passionate about empowering creators with tools that simplify the creative process and unlock new opportunities.' },
-    { name: 'Jayson Nguyen', role: 'Co-Founder', desc: 'Dedicated to building smart automation that helps publishers and entrepreneurs scale their creative businesses faster.' },
+    { name: 'Seddik Laaziri', role: 'Co-Founder', desc: 'Passionate about empowering creators with tools that simplify the creative process and unlock new opportunities.' },
+    { name: 'jawad ouardi', role: 'Co-Founder', desc: 'Dedicated to building smart automation that helps publishers and entrepreneurs scale their creative businesses faster.' },
   ];
 
   return (
