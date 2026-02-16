@@ -1410,6 +1410,18 @@ function FinalCTASection() {
   );
 }
 
+// Sales Page Disclaimer
+function SalesPageDisclaimer() {
+  return (
+    <div style={{ background: '#f8f9fa', padding: '20px', marginTop: '40px', fontSize: '14px', color: '#666' }}>
+      <strong>Disclaimer:</strong> This is a digital download product. 
+      All sales are final. By purchasing, you agree to our 
+      <a href="/terms">Terms of Service</a> and 
+      <a href="/privacy">Privacy Policy</a>.
+    </div>
+  );
+}
+
 // Footer
 function Footer() {
   return (
@@ -1476,6 +1488,7 @@ function App() {
         <TeamSection />
         <FinalCTASection />
       </main>
+      <SalesPageDisclaimer />
       <Footer />
     </div>
   );
